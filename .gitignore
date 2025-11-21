@@ -1,0 +1,26 @@
+# Java
+target/
+*.class
+*.jar
+*.war
+*.ear
+*.log
+
+# Maven
+.mvn/
+mvnw
+mvnw.cmd
+
+# IDE
+.idea/
+*.iml
+.vscode/
+*.classpath
+*.project
+*.settings/
+
+# Node
+node_modules/
+dist/
+.env
+.DS_Store
