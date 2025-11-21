@@ -1,0 +1,10 @@
+package com.example.financetracker.budget;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import java.util.List;
+import java.util.Optional;
+
+public interface BudgetRepository extends JpaRepository<Budget, Long> {
+    List<Budget> findAllByUserId(Long userId);
+    Optional<Budget> findByUserIdAndCategory(Long userId, String category);
+}
